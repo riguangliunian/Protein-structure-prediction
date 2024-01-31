@@ -68,7 +68,7 @@ dataClass = DataClass('data1.txt', 'data2.txt', k=1, validSize=0.2, minCount=0)
 trainStream = dataClass.random_batch_data_stream(batchSize=128, type='train', device="cuda", augmentation=0.5)
 
 # 词向量预训练
-dataClass.vectorize(method='char2vec', feaSize=25, sg=1)
+dataClass.vectorize(method='char2vec', feaSize=23, sg=1)
 
 # onehot+理化特征获取
 dataClass.vectorize(method='feaEmbedding')
