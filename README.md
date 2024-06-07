@@ -1,10 +1,7 @@
 # Protein-structure-prediction
 ## Introduction
-This code is used to implement the distilled improved TCN-BiRNN-MLP and perform protein secondary structure prediction on it.
-we propose a new TCN layer and a new combined model, improved TCN-BIRNN-MLP, word vector extraction of one-hot coding features and physicochemical properties of proteins by word2vec disambiguation, using knowledge distillation to allow student models to learn the rich features of the ProtT5-XL-UniRef teacher model and multiple datasets for protein octapeptide and tripeptide prediction. The current dataset was derived from the classical datasets TS115 and CB513 and protein primary and secondary structure data selected from the PDB Protein Data Bank
+This project uses a hybrid neural network model that integrates Temporal Convolutional Network (TCN), Bidirectional Long Short-Term Memory (BiLSTM), and Multi-Head Attention (MHA) to predict the secondary structure of proteins.
 
-## Datasets
-First, two classical datasets, TS115 and CB513 , whose small amounts of data can effectively respond to the model's effect, are used; at the same time, 15,078 protein data points from 2018-06-6 to 2020 are introduced from the PDB database
 
 ## Requirements
 gensim==4.3.2  
